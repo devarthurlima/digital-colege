@@ -1,6 +1,7 @@
 import Gallery from "../../components/Gallery";
 import FeaturedCollections from "../../components/FeaturedCollections";
 import ProductListing from "../../components/ProductListing";
+import SpecialOffer from "../../components/SpecialOffer";
 import { products } from "../../data/products";
 
 export default function HomePage() {
@@ -75,6 +76,8 @@ export default function HomePage() {
         </div>
         <ProductListing products={products.slice(0, 8)} />
       </main>
+
+      <SpecialOffer />
     </div>
   );
 }
