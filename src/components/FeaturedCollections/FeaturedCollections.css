@@ -1,0 +1,133 @@
+.featured-collections-container {
+  padding: 40px 100px;
+  box-sizing: border-box;
+}
+
+.featured-section-title {
+  font-size: 24px;
+  color: #474747;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.featured-banners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.collection-banner-card {
+  position: relative;
+  background-color: #d8e3f2;
+  border-radius: 8px;
+  height: 256px;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.collection-discount-tag {
+  background-color: #e7ff86;
+  color: #474747;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 29px;
+  z-index: 2;
+}
+
+.collection-banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.collection-banner-btn {
+  background-color: #f5f5f5;
+  color: #c92071;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  z-index: 2;
+  transition:
+    opacity 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.collection-banner-btn:hover {
+  background-color: #ffffff;
+}
+
+.featured-categories-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.featured-categories-title {
+  font-size: 24px;
+  color: #474747;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.featured-categories-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.category-item:hover {
+  transform: translateY(-4px);
+}
+
+.category-circle {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-icon {
+  font-size: 38px;
+}
+
+.category-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #474747;
+}
+
+@media (max-width: 1024px) {
+  .featured-banners-grid {
+    grid-template-columns: 1fr;
+  }
+}

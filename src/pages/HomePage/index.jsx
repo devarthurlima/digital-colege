@@ -1,4 +1,5 @@
 import Gallery from "../../components/Gallery";
+import FeaturedCollections from "../../components/FeaturedCollections";
 import ProductListing from "../../components/ProductListing";
 import { products } from "../../data/products";
 
@@ -46,12 +47,32 @@ export default function HomePage() {
     <div style={{ backgroundColor: "#F9F8FE" }}>
       <Gallery slides={slides} />
 
-      <main style={{ padding: "40px 100px" }}>
-        <h2
-          style={{ fontSize: "24px", color: "#474747", marginBottom: "20px" }}
+      <FeaturedCollections />
+
+      <main style={{ padding: "0 100px 60px 100px" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: "20px",
+          }}
         >
-          Produtos em alta
-        </h2>
+          <h2 style={{ fontSize: "24px", color: "#474747", fontWeight: 700 }}>
+            Produtos em alta
+          </h2>
+          <a
+            href="/produtos"
+            style={{
+              color: "#C92071",
+              textDecoration: "none",
+              fontSize: "16px",
+              fontWeight: 600,
+            }}
+          >
+            Ver todos &rarr;
+          </a>
+        </div>
         <ProductListing products={products.slice(0, 8)} />
       </main>
     </div>
