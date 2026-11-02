@@ -9,10 +9,8 @@ export default function ProductCard({
   priceDiscount,
   discount,
   category = "Ténis",
-  // Caso o seu componente receba um objeto único "product":
   product,
 }) {
-  // Garante compatibilidade caso o componente receba props individuais ou o objeto 'product'
   const finalId = product?.id || id;
   const finalName = product?.name || name;
   const finalImage = product?.image || image;
@@ -22,16 +20,16 @@ export default function ProductCard({
   const finalCategory = product?.category || category;
 
   return (
-    <Link to={`/produtos/${finalId}`} className="product-card" style={{ textDecoration: "none", color: "inherit" }}>
+    <Link
+      to={`/produtos/${finalId}`}
+      className="product-card"
+      style={{ textDecoration: "none", color: "inherit" }}
+    >
       <div className="product-card-image-box">
         {finalDiscount && (
           <span className="product-discount-tag">{finalDiscount}</span>
         )}
-        <img
-          src={finalImage}
-          alt={finalName}
-          className="product-card-image"
-        />
+        <img src={finalImage} alt={finalName} className="product-card-image" />
       </div>
 
       <div className="product-card-info">

@@ -136,15 +136,6 @@
   white-space: nowrap;
 }
 
-.header-register-link {
-  white-space: nowrap;
-}
-
-.header-actions a,
-.header-register-link {
-  white-space: nowrap;
-}
-
 @media (max-width: 1024px) {
   .header-container {
     padding: 20px 24px 0 24px;

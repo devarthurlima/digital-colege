@@ -21,7 +21,6 @@ export default function ProductViewPage() {
 
   const [activeThumb, setActiveThumb] = useState(galleryImages[0]);
 
-  // Sempre que o id da URL ou o produto mudar, atualiza a foto ativa para a foto do novo produto
   useEffect(() => {
     if (product?.image) {
       setActiveThumb(product.image);

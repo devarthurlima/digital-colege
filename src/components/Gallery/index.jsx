@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import arrowLeft from "../../assets/arrow-left.svg";
 import arrowRight from "../../assets/arrow-right.svg";
