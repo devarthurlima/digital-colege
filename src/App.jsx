@@ -17,7 +17,7 @@ export default function App() {
           }
         />
         <Route
-          path="/products"
+          path="/produtos"
           element={
             <Layout>
               <ProductListingPage />
@@ -25,7 +25,7 @@ export default function App() {
           }
         />
         <Route
-          path="/products/:id"
+          path="/produtos/:id"
           element={
             <Layout>
               <ProductViewPage />
