@@ -112,3 +112,44 @@
 .related-view-all:hover {
   opacity: 0.8;
 }
+
+@media (max-width: 1024px) {
+  .product-view-page {
+    padding: 20px 24px 60px 24px;
+  }
+
+  .product-view-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .product-view-gallery {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .gallery-main-view {
+    height: 380px;
+  }
+
+  .buy-box {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-main-view {
+    height: 280px;
+  }
+
+  .thumb-card {
+    width: 70px;
+    height: 60px;
+  }
+
+  .buy-box-name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
