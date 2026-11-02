@@ -61,4 +61,4 @@ npm run dev
 
 ## 👤 Autor
 
-Desenvolvido por Arthur Mendes.
+Desenvolvido por Arthur Mendes Lima.
