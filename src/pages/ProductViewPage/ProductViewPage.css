@@ -1,0 +1,109 @@
+.product-view-page {
+  background-color: #f9f8fe;
+  padding: 30px 100px 80px 100px;
+  box-sizing: border-box;
+}
+
+.view-breadcrumb {
+  font-size: 14px;
+  color: #474747;
+  margin-bottom: 30px;
+}
+
+.view-breadcrumb a {
+  color: #474747;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.view-breadcrumb span {
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.product-view-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+
+.product-view-gallery {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gallery-main-view {
+  background-color: #e2e3ff;
+  border-radius: 4px;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.active-shoe-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.gallery-thumbs-row {
+  display: flex;
+  gap: 12px;
+}
+
+.thumb-card {
+  width: 90px;
+  height: 75px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.thumb-card.active {
+  border-color: #c92071;
+}
+
+.thumb-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.related-products-section {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 40px;
+}
+
+.related-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.related-header h2 {
+  font-size: 24px;
+  color: #474747;
+  font-weight: 700;
+}
+
+.related-view-all {
+  color: #c92071;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}

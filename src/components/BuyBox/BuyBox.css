@@ -1,0 +1,163 @@
+.buy-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+  width: 100%;
+}
+
+.buy-box-name {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #1f1f1f;
+  margin: 0 0 8px 0;
+}
+
+.buy-box-ref {
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 12px;
+}
+
+.buy-box-rating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.buy-box-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #f6aa1c;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.star-icon {
+  width: 14px;
+  height: 14px;
+  filter: brightness(0) invert(1);
+}
+
+.rating-score {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: 4px;
+}
+
+.rating-reviews {
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+.buy-box-prices {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.buy-box-current-price {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.buy-box-old-price {
+  font-size: 16px;
+  color: #cccccc;
+  text-decoration: line-through;
+}
+
+.buy-box-description h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #8f8f8f;
+  margin: 0 0 6px 0;
+}
+
+.buy-box-description p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #474747;
+  margin: 0 0 24px 0;
+}
+
+.buy-box-options {
+  margin-bottom: 20px;
+}
+
+.option-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #8f8f8f;
+  margin-bottom: 10px;
+}
+
+.size-selector {
+  display: flex;
+  gap: 10px;
+}
+
+.size-btn {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  color: #474747;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.size-btn.active {
+  border: 2px solid #c92071;
+  background-color: #c92071;
+  color: #ffffff;
+}
+
+.color-selector {
+  display: flex;
+  gap: 12px;
+}
+
+.color-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s ease;
+}
+
+.color-btn.active {
+  box-shadow:
+    0 0 0 2px #ffffff,
+    0 0 0 4px #c92071;
+  transform: scale(1.1);
+}
+
+.buy-box-submit-btn {
+  width: 100%;
+  background-color: #ffb31f;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: opacity 0.2s ease;
+}
+
+.buy-box-submit-btn:hover {
+  opacity: 0.9;
+}
