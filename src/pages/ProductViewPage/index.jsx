@@ -55,7 +55,7 @@ export default function ProductViewPage() {
 
       <section className="related-products-section">
         <div className="related-header">
-          <h2>Produtos recomendados</h2>
+          <h2>Produtos Relacionados</h2>
           <Link to="/produtos" className="related-view-all">
             Ver todos &rarr;
           </Link>
