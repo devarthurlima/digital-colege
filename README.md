@@ -1,16 +1,39 @@
-# React + Vite
+# 🛍️ Digital Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação web de comércio eletrónico desenvolvida em React para a plataforma da **Digital Store**, apresentando catálogo interativo de calçados, navegação fluida e fidelidade ao protótipo do Figma.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Funcionalidades
 
-## React Compiler
+- **Página Inicial (Home):**
+  - Banner rotativo com destaques promocionais.
+  - Secções de coleções temáticas em destaque com selos de desconto.
+  - Grelha simétrica com produtos em alta alinhada a 4 colunas.
+- **Listagem de Produtos (`/produtos`):**
+  - Visualização completa do catálogo.
+  - Barra lateral com múltiplos filtros (marca, categoria, género, estado).
+  - Ordenação dinâmica dos artigos por menor e maior preço.
+- **Detalhes do Produto (`/produtos/:id`):**
+  - Rotas dinâmicas integradas via parâmetros de URL.
+  - Galeria interativa com sincronização imediata da imagem principal através de miniaturas ou ao trocar de calçado.
+  - Seletores de tamanho e paleta de cores.
+  - Secção de produtos recomendados.
+- **Cabeçalho e Rodapé Globais:**
+  - Identificação visual e logótipo com atalho direto para a página inicial.
+  - Pesquisa com redirecionamento formatado para a listagem.
+  - Destaque visual da rota ativa no menu superior.
+- **Design Responsivo:**
+  - Adaptação fluida para resoluções de secretária, *tablets* e dispositivos móveis.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/) — Biblioteca para interfaces declarativas
+- [Vite](https://vitejs.dev/) — Ferramenta de compilação e servidor local rápido
+- [React Router DOM](https://reactrouter.com/) — Gestão de rotas e navegação SPA
+- [Lucide React](https://lucide.dev/) — Conjunto de ícones vetoriais
+- **CSS3** — Estilização com CSS Grid, Flexbox e media queries
+
+---
