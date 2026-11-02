@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import FilterGroup from "../../components/FilterGroup";
 import ProductListing from "../../components/ProductListing";
 import { products } from "../../data/products";
@@ -9,6 +9,7 @@ export default function ProductListingPage() {
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedGender, setSelectedGender] = useState([]);
   const [selectedCondition, setSelectedCondition] = useState([]);
+  const [sortOption, setSortOption] = useState("relevance");
 
   const handleToggle = (item, state, setState) => {
     if (state.includes(item)) {
@@ -18,16 +19,38 @@ export default function ProductListingPage() {
     }
   };
 
+  const displayedProducts = useMemo(() => {
+    let list = [...products];
+
+    if (sortOption === "price-asc") {
+      list.sort(
+        (a, b) => (a.priceDiscount || a.price) - (b.priceDiscount || b.price),
+      );
+    } else if (sortOption === "price-desc") {
+      list.sort(
+        (a, b) => (b.priceDiscount || b.price) - (a.priceDiscount || a.price),
+      );
+    }
+
+    return list;
+  }, [sortOption]);
+
   return (
     <div className="product-listing-page">
       <div className="listing-header">
         <p className="listing-results-count">
-          <strong>Resultados para "Ténis"</strong> - {products.length} produtos
+          <strong>Resultados para "Ténis"</strong> - {displayedProducts.length}{" "}
+          produtos
         </p>
 
         <div className="listing-sort-box">
           <label htmlFor="sort-select">Ordenar por:</label>
-          <select id="sort-select" className="listing-select">
+          <select
+            id="sort-select"
+            className="listing-select"
+            value={sortOption}
+            onChange={(e) => setSortOption(e.target.value)}
+          >
             <option value="relevance">Mais relevantes</option>
             <option value="price-asc">Menor preço</option>
             <option value="price-desc">Maior preço</option>
@@ -83,7 +106,7 @@ export default function ProductListingPage() {
         </aside>
 
         <section className="listing-products-area">
-          <ProductListing products={products} />
+          <ProductListing products={displayedProducts} />
         </section>
       </div>
     </div>
